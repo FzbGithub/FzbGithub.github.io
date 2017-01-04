@@ -2,11 +2,13 @@ html,body {
     height: 100%;
     width: 100%;
     font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
 }
 * { margin: 0; }
 .pos-relative { position: relative; }
 .pos-abs { position: absolute; }
 .align-center { text-align: center; }
+.dis-in-b { display: inline-block; }
 .login-wrap {
     height: 100%;
     width: 100%;
@@ -18,7 +20,7 @@ html,body {
     font-weight: bolder;
     text-align: center;
     color: #fff;
-    line-height: 120px;
+    line-height: 110px;
 }
 .login-main {
     width: 320px;
@@ -103,6 +105,156 @@ html,body {
 .friend-link .icon.three { background-position-y: -65px;}
 .friend-link .icon.four { background-position-y: -99px;}
 
+/*z专属页面*/
+.belong-head {
+    height: 640px;
+    background-color: rgb(75, 73, 74);
+}
+.belong-head .man {
+    width: 480px;
+    height: 100%;
+    z-index: 1;
+    bottom: 0;
+    right: 60px;
+    opacity: 0.1;
+}
+.top-nav {
+    width: 86%;
+    height: 80px;
+    left: 50%;
+    top: 20px;
+    margin-left: -43%;
+    z-index: 9;
+}
+.top-nav .opt-group {
+    right: 0;
+    top: 10px;
+}
+.top-nav .opt-btn {
+    width: 80px;
+    height: 30px;
+    color: #eee;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.top-nav .opt-btn:hover { color: #00a78e; }
+.top-nav .opt-btn.cur-active { color: #00a78e; }
+.man-detail {
+    width: 86%;
+    height: 380px;
+    background-color: rgba(64, 63, 63, 0.8);
+    z-index: 9;
+    top: 160px;
+    left: 50%;
+    margin-left: -43%;
+}
+.man-detail-wrap {
+    height: 100%;
+    padding-right: 360px;
+}
+.man-detail-wrap .detail {
+    padding-top: 56px;
+    padding-left: 40px;
+}
+.hello-btn {
+    width: 86px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #00a78e;
+    text-align: center;
+}
+.hello-btn .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #00a78e;
+    bottom: -10px;
+    left: 16px;
+}
+.man-detail .myself {
+    width: 240px;
+    height: 260px;
+    right: 40px;
+    top: 57px;
+}
+.belong-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: solid 8px #00a78e;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.man-detail-wrap .hi-content {
+    margin-top: 14px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    color: #c7c7c7;
+    border-bottom: solid 1px #c7c7c7;
+}
+.my-detail {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 14px;
+}
+.my-detail p {
+    line-height: 24px;
+}
+.my-detail p .pr { padding-right: 20px; }
+.belong-wish {
+    height: 500px;
+    padding-right: 50%;
+}
+.belong-wish .wish-man {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+.belong-wish .wish-detail {
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #f4f4f4;
+}
+.wish-detail-content {
+    color: #6a6a6a;
+    padding: 40px;
+    font-size: 1.6em;
+}
+.wish-detail-content h2 {
+    color: #000;
+    font-size: 3.0em;
+    padding-bottom: 16px;
+
+}
+.wish-detail-content p {
+    line-height: 30px;
+}
+.belong-tip {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+.copyright {
+    position: fixed;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    bottom: 0;
+    color: #fff;
+}
 @media(max-width:640px){
     .login-wrap .fy {
         font-size: 24px;
