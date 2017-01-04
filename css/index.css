@@ -10,7 +10,7 @@ html,body {
 .login-wrap {
     height: 100%;
     width: 100%;
-    background: url("../images/login_bg.jpg") center  no-repeat;
+    background: #114674 url("../images/login_bg.jpg") center  no-repeat;
     background-size: 100% 100%;
 }
 .login-wrap .fy {
@@ -65,6 +65,25 @@ html,body {
     outline: none;
     background-color: rgba(0,0,0,0);
     border: none;
+    color: #fff;
+}
+.login-options {
+    margin-top: 14px;
+}
+.login-btn {
+    display: inline-block;
+    width: 90px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #ef9f2b;
+    color: #a9a5a2;
+    font-size: 16px;
+    line-height: 36px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.login-btn:hover {
+    opacity: 1;
     color: #fff;
 }
 .friend-link {
