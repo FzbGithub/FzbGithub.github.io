@@ -14,14 +14,14 @@ html,body {
     background-size: 100% 100%;
 }
 .login-wrap .fy {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bolder;
     text-align: center;
     color: #fff;
     line-height: 120px;
 }
 .login-main {
-    width: 48%;
+    width: 320px;
     margin: 0 auto;
     background: rgba(60, 94, 119, 0.44);
     padding: 1.5em;
@@ -83,3 +83,12 @@ html,body {
 .friend-link .icon.two { background-position-y: -29px;}
 .friend-link .icon.three { background-position-y: -65px;}
 .friend-link .icon.four { background-position-y: -99px;}
+
+@media(max-width:640px){
+    .login-wrap .fy {
+        font-size: 24px;
+    }
+    .login-main {
+        width: 280px;
+    }
+}
